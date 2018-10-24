@@ -1,8 +1,8 @@
 html {
-  font-size: 15px; }
+  font-size: 17px; }
 
 .encabezado {
-  background: #B2AA33;
+  background: #CF2033;
   color: #F9F075;
   padding: .2rem 0; }
 
@@ -76,7 +76,7 @@ html {
           flex: 1 1 1 auto;
   border: 0;
   border-radius: 0 5px 5px 0;
-  background: #DDD920;
+  background: #FFCD00;
   Color: #FFFFFF; }
 
 /*------------------------------------------------*/
@@ -108,7 +108,7 @@ html {
 
 #menu-principal ul a:hover,
 #menu-principal ul li.active a {
-  color: #CF202E; }
+  color: #F9F075; }
 
 /*------------------------------------------------*/
 .texto-encabezado {
@@ -144,17 +144,20 @@ html {
 /*------------------------------------------------*/
 #Subtitulo1 {
   font-family: 'Oswald', bold;
-  color: #312F8D; }
+  color: #B22222;
+  font-size: 20px; }
 
 #Contenido1 {
   font-family: 'Open Sans Condensed', light;
   color: #000000;
-  text-align: justify; }
+  text-align: justify;
+  font-size: 19px; }
 
 #Aviso1 {
   font-family: 'Source Serif Pro', bold;
-  color: #312F8D;
-  text-align: center; }
+  color: #B22222;
+  text-align: center;
+  font-size: 19px; }
 
 .Boton_Contacto {
   float: none;

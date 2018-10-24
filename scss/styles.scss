@@ -5,10 +5,10 @@
 $Color_Text_Titulo:#CF1F2E;
 $Color_Text_Principal:#FFFFFF;
 $Color_Text_Secundario:#000000;
-$Color_Fondo_Principal:#CF202E;
+$Color_Fondo_Principal:#E1202E;
 $Color_Fondo_Secundario:#028F6D;
-$Color_Fondo_Menu:#B2AA33;
-$Color_Text_Subtitulo:#312F8D;
+$Color_Fondo_Menu:#CF2033;
+$Color_Text_Subtitulo:#B22222;
 $Color_Text_Menu:#F9F075;
 $Color2:#80141A;
 $Color3:#F27582;
@@ -17,14 +17,14 @@ $Color5:#27773B;
 $Color6:#CB85C2;
 $Color8:#DC5A26;
 $Color9:#B3AA33;
-$Color10:#DDD920;
+$Color10:#FFCD00;
 $Color12:#FFCD00;
 $Color13:#E2E2E1;
 $Color14:#0A0A0A;
 $Color15:#FECD05;
 
 html{
-    font-size: 15px;    
+    font-size: 17px;    
 }
 
 .encabezado{
@@ -130,7 +130,7 @@ html{
     font-weight: bold;
     color: $Color_Text_Principal;
     text-transform: capitalize;
-    border-top: 1px solid $Color_Text_Principal;  
+    border-top: 1px solid $Color_Text_Principal;
     text-decoration: none;
     font-family:  'Source Serif Pro', cursive;
 }
@@ -138,7 +138,7 @@ html{
 #menu-principal ul a:hover,
 #menu-principal ul li.active a
 {
-    color: $Color_Fondo_Principal;    
+    color: $Color_Text_Menu;    
 }
 /*------------------------------------------------*/
 
@@ -173,21 +173,22 @@ html{
 #Subtitulo1{
     font-family: 'Oswald', bold;
     color: $Color_Text_Subtitulo;
+    font-size: 20px;
 }
 
 #Contenido1{
     font-family: 'Open Sans Condensed', light;
     color: $Color_Text_Secundario;
     text-align: justify;
+    font-size: 19px;
 }
 
 #Aviso1{
     font-family: 'Source Serif Pro', bold;
     color: $Color_Text_Subtitulo;
     text-align: center;
+    font-size: 19px;
 }
-
-
 
 .Boton_Contacto{
     float: none;
