@@ -1,0 +1,193 @@
+html {
+  font-size: 15px; }
+
+.encabezado {
+  background: #B2AA33;
+  color: #F9F075;
+  padding: .2rem 0; }
+
+.encabezado .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.encabezado .logo img {
+  width: 200px;
+  height: auto; }
+
+.bienvenida {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+/*------------------------------------------*/
+/*ESTILOS PARA EL BOTON BUSCAR Y BOTON MENU */
+.boton-buscar, .boton-menu {
+  border: 0;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0 .5rem;
+  background: transparent;
+  color: #FFFFFF; }
+
+.boton-buscar:focus,
+.boton-menu:focus {
+  outline: 0; }
+
+.boton-buscar {
+  margin-left: auto;
+  margin-right: .8rem; }
+
+/*------------------------------------------*/
+/*----------------------------------*/
+/*ESTILO BLOQUE BUSCAR*/
+#bloque-buscar {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%; }
+
+.contenedor-bloque-buscar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3rem;
+  margin: 1rem 0; }
+
+/*----------------------------------*/
+/*------------------------------------------------*/
+/*CONFIGURANDO LOS INPUT DE TIPO TEXTO */
+.contenedor-bloque-buscar input[type="text"] {
+  border: 0;
+  border-radius: 10px 0 0 10px;
+  padding: 1rem; }
+
+.contenedor-bloque-buscar input[type="submit"] {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1 auto;
+          flex: 1 1 1 auto;
+  border: 0;
+  border-radius: 0 5px 5px 0;
+  background: #DDD920;
+  Color: #FFFFFF; }
+
+/*------------------------------------------------*/
+/*------------------------------------------------*/
+/*CONFIGURANDO EL MENU PRINCIPAL */
+#menu-principal {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%; }
+
+#menu-principal ul {
+  padding: 0;
+  list-style: none;
+  margin: 1rem 0 0 0; }
+
+/*------------------------------------------------*/
+/*------------------------------------------------*/
+/*CONFIGURANDO MENU DE ENLACES PRINCIPALES */
+#menu-principal ul a {
+  display: block;
+  padding: .8rem 0;
+  text-align: center;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-transform: capitalize;
+  border-top: 1px solid #FFFFFF;
+  text-decoration: none;
+  font-family: 'Source Serif Pro', cursive; }
+
+#menu-principal ul a:hover,
+#menu-principal ul li.active a {
+  color: #CF202E; }
+
+/*------------------------------------------------*/
+.texto-encabezado {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/*------------------------------------------------*/
+/*CONFIGURANDO EL ENCABEZADO PRINCIPAL */
+.texto-encabezado .display-4 {
+  margin-top: 4rem;
+  font-family: 'Courgette', bold;
+  color: #CF1F2E;
+  text-align: center; }
+
+/*------------------------------------------------*/
+/*------------------------------------------------*/
+/*CONFIGURANDO EL BOTON CONTACTO */
+.btn-primary {
+  color: #FFFFFF;
+  background-color: #30328A;
+  border-color: transparent;
+  margin-top: 1rem;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+/*------------------------------------------------*/
+#Subtitulo1 {
+  font-family: 'Oswald', bold;
+  color: #312F8D; }
+
+#Contenido1 {
+  font-family: 'Open Sans Condensed', light;
+  color: #000000;
+  text-align: justify; }
+
+#Aviso1 {
+  font-family: 'Source Serif Pro', bold;
+  color: #312F8D;
+  text-align: center; }
+
+.Boton_Contacto {
+  float: none;
+  text-align: center; }
+
+.flecha-bajar a {
+  display: inline-block;
+  color: #CF0A2C;
+  font-size: 4rem;
+  text-align: center;
+  -webkit-animation: flecha-animada 2s ease-in-out infinite;
+          animation: flecha-animada 2s ease-in-out infinite; }
+
+@-webkit-keyframes flecha-animada {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px); }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes flecha-animada {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px); }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+/*# sourceMappingURL=styles.css.map */

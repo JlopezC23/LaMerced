@@ -1,0 +1,215 @@
+//-----------------
+//Patron de colores
+//-----------------
+
+$Color_Text_Titulo:#CF1F2E;
+$Color_Text_Principal:#FFFFFF;
+$Color_Text_Secundario:#000000;
+$Color_Fondo_Principal:#CF202E;
+$Color_Fondo_Secundario:#028F6D;
+$Color_Fondo_Menu:#B2AA33;
+$Color_Text_Subtitulo:#312F8D;
+$Color_Text_Menu:#F9F075;
+$Color2:#80141A;
+$Color3:#F27582;
+$Color4:#88C554;
+$Color5:#27773B;
+$Color6:#CB85C2;
+$Color8:#DC5A26;
+$Color9:#B3AA33;
+$Color10:#DDD920;
+$Color12:#FFCD00;
+$Color13:#E2E2E1;
+$Color14:#0A0A0A;
+$Color15:#FECD05;
+
+html{
+    font-size: 15px;    
+}
+
+.encabezado{
+    background: $Color_Fondo_Menu;
+    color: $Color_Text_Menu;
+    padding: .2rem 0;    
+}
+
+.encabezado .container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.encabezado .logo img{
+    width: 200px;
+    height: auto;
+}
+
+
+
+.bienvenida {
+    display: flex;
+    flex-direction: column;
+}
+
+/*------------------------------------------*/
+/*ESTILOS PARA EL BOTON BUSCAR Y BOTON MENU */
+.boton-buscar, .boton-menu{
+    border:0;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0 .5rem;
+    background: transparent;
+    color: $Color_Text_Principal;    
+}
+
+.boton-buscar:focus, 
+.boton-menu:focus{
+    outline: 0;
+}
+
+.boton-buscar{
+    margin-left: auto;
+    margin-right: .8rem;
+}
+/*------------------------------------------*/
+
+
+/*----------------------------------*/
+/*ESTILO BLOQUE BUSCAR*/
+#bloque-buscar{
+    flex: 1 1 100%;    
+}
+
+.contenedor-bloque-buscar{
+    display: flex;
+    height: 3rem;
+    margin: 1rem 0;
+}
+/*----------------------------------*/
+
+
+/*------------------------------------------------*/
+/*CONFIGURANDO LOS INPUT DE TIPO TEXTO */
+.contenedor-bloque-buscar input[type="text"]{
+    border: 0;
+    border-radius: 10px 0 0 10px;
+    padding: 1rem;
+}
+
+.contenedor-bloque-buscar input[type="submit"]{
+    flex: 1 1 1 auto;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    background: $Color10;
+    Color: $Color_Text_Principal;    
+}
+/*------------------------------------------------*/
+
+
+/*------------------------------------------------*/
+/*CONFIGURANDO EL MENU PRINCIPAL */
+#menu-principal{
+    flex: 1 1 100%;
+    
+}
+
+#menu-principal ul{
+    padding: 0;
+    list-style: none;
+    margin: 1rem 0 0 0;
+    
+}
+/*------------------------------------------------*/
+
+/*------------------------------------------------*/
+/*CONFIGURANDO MENU DE ENLACES PRINCIPALES */
+#menu-principal ul a{
+    display: block;
+    padding: .8rem 0;
+    text-align: center;
+    font-weight: bold;
+    color: $Color_Text_Principal;
+    text-transform: capitalize;
+    border-top: 1px solid $Color_Text_Principal;  
+    text-decoration: none;
+    font-family:  'Source Serif Pro', cursive;
+}
+
+#menu-principal ul a:hover,
+#menu-principal ul li.active a
+{
+    color: $Color_Fondo_Principal;    
+}
+/*------------------------------------------------*/
+
+.texto-encabezado{
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+/*------------------------------------------------*/
+/*CONFIGURANDO EL ENCABEZADO PRINCIPAL */
+.texto-encabezado .display-4{
+    margin-top: 4rem;
+    font-family: 'Courgette', bold;
+    color: $Color_Text_Titulo;
+    text-align: center;
+}
+/*------------------------------------------------*/
+
+/*------------------------------------------------*/
+/*CONFIGURANDO EL BOTON CONTACTO */
+.btn-primary{
+    color: $Color_Text_Principal;
+    background-color: #30328A;
+    border-color: transparent;
+    margin-top: 1rem;
+    transition: all .5s ease;
+}
+/*------------------------------------------------*/
+
+#Subtitulo1{
+    font-family: 'Oswald', bold;
+    color: $Color_Text_Subtitulo;
+}
+
+#Contenido1{
+    font-family: 'Open Sans Condensed', light;
+    color: $Color_Text_Secundario;
+    text-align: justify;
+}
+
+#Aviso1{
+    font-family: 'Source Serif Pro', bold;
+    color: $Color_Text_Subtitulo;
+    text-align: center;
+}
+
+
+
+.Boton_Contacto{
+    float: none;
+    text-align: center;
+}
+
+.flecha-bajar a{
+    display: inline-block;
+    color: #CF0A2C;
+    font-size: 4rem;
+    text-align: center;
+    animation: flecha-animada 2s ease-in-out infinite;
+}
+
+@keyframes flecha-animada{
+    from{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(6px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
