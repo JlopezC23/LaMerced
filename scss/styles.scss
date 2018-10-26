@@ -11,7 +11,7 @@ $Color_Fondo_Menu:#CF2033;
 $Color_Text_Subtitulo:#B22222;
 $Color_Text_Menu:#F9F075;
 $Color2:#80141A;
-$Color3:#F27582;
+$Color3:#F9EC64;/*Color letras seccion Devocion */
 $Color4:#88C554;
 $Color5:#27773B;
 $Color6:#CB85C2;
@@ -24,7 +24,7 @@ $Color14:#0A0A0A;
 $Color15:#FECD05;
 
 html{
-    font-size: 17px;    
+    font-size: 18px;    
 }
 
 .encabezado{
@@ -43,8 +43,6 @@ html{
     width: 200px;
     height: auto;
 }
-
-
 
 .bienvenida {
     display: flex;
@@ -92,8 +90,9 @@ html{
 /*CONFIGURANDO LOS INPUT DE TIPO TEXTO */
 .contenedor-bloque-buscar input[type="text"]{
     border: 0;
-    border-radius: 10px 0 0 10px;
+    border-radius: 5px 0 0 5px;
     padding: 1rem;
+    flex: 1 1 auto;
 }
 
 .contenedor-bloque-buscar input[type="submit"]{
@@ -101,7 +100,9 @@ html{
     border: 0;
     border-radius: 0 5px 5px 0;
     background: $Color10;
-    Color: $Color_Text_Principal;    
+    Color: $Color_Text_Principal;
+    flex: 0 1 auto;
+    padding: 0 1rem;
 }
 /*------------------------------------------------*/
 
@@ -152,10 +153,11 @@ html{
 /*------------------------------------------------*/
 /*CONFIGURANDO EL ENCABEZADO PRINCIPAL */
 .texto-encabezado .display-4{
-    margin-top: 4rem;
+    margin-top: 1rem;
     font-family: 'Courgette', bold;
     color: $Color_Text_Titulo;
     text-align: center;
+    font-size: 50px;
 }
 /*------------------------------------------------*/
 
@@ -173,21 +175,22 @@ html{
 #Subtitulo1{
     font-family: 'Oswald', bold;
     color: $Color_Text_Subtitulo;
-    font-size: 20px;
+    font-size: 26px;
 }
 
 #Contenido1{
     font-family: 'Open Sans Condensed', light;
     color: $Color_Text_Secundario;
     text-align: justify;
-    font-size: 19px;
+    font-size: 20px;
 }
 
 #Aviso1{
     font-family: 'Source Serif Pro', bold;
     color: $Color_Text_Subtitulo;
     text-align: center;
-    font-size: 19px;
+    font-size: 18px;
+    font-weight:bolder; 
 }
 
 .Boton_Contacto{
@@ -197,7 +200,7 @@ html{
 
 .flecha-bajar a{
     display: inline-block;
-    color: #CF0A2C;
+    color: $Color_Text_Titulo;
     font-size: 4rem;
     text-align: center;
     animation: flecha-animada 2s ease-in-out infinite;
@@ -214,3 +217,277 @@ html{
         transform: translateY(0);
     }
 }
+
+/*---------------------------------*/
+/*CONFIGURANDO SECCION #2 DEVOCION */
+.devocion{
+    background: $Color_Fondo_Menu;
+}
+
+.devocion h2{
+    color: $Color3;
+    font-family: 'Courgette', bold;
+    padding-top: 2rem;
+}
+
+.devocion img{
+    width: 120%;
+    margin: 0 auto;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+}
+
+.devocion #Items{
+    font-family: 'Open Sans Condensed', light;
+    color: $Color3;
+    font-size: 22px;
+}
+
+.devocion p{
+    color: $Color_Text_Principal;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.devocion h4,
+.devocion a:hover{
+    color: $Color10;
+    font-family: 'Oswald', light;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    margin: 1rem 0;
+}
+/*------------------------------*/
+
+/*-----------------------------------------*/
+/*CONFIGURANDO SECCION GALERIA DE IMAGENES */
+
+.devocion .contanier{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.devocion .owl-nav{
+    display: flex;
+    justify-content: center;
+    margin: .3rem 0;
+    font-size: 3rem;
+    color: $Color_Text_Principal;
+    transition: all .5s ease;
+}
+
+.devocion .owl-nav .owl-prev,
+.devocion .owl-nav .owl-next,
+.devocion .owl-nav .owl-prev:hover,
+.devocion .owl-nav .owl-next:hover{
+    margin: 0 .7rem;
+    color: yellow;
+}
+/*-----------------------------------------*/
+/*------FIN DE LA SECCION #2 DEVOCION------*/
+
+
+
+/*---------------------------------------*/
+/*CONFIGURANDO SECCION #3 SOBRE NOSOTROS */
+
+.nosotros{
+    background: $Color_Fondo_Secundario
+}
+
+.nosotros h2{
+    color: $Color3;
+    font-family: 'Courgette', bold;
+    padding-top: 2rem;
+}
+
+.nosotros p{
+    color: $Color_Text_Principal;
+    font-family: 'Open Sans Condensed', light;
+    padding-top: 1rem;
+}
+
+.nosotros .container img:hover{
+    filter: opacity(.5);
+    border-bottom-style: solid;
+}
+/*---------------------------------------*/
+/*-----FIN DE LA SECCION #3 NOSOTROS-----*/
+
+
+/*---------------------------------------*/
+/*CONFIGURANDO SECCION #4 EQUIPO PASTORAL */
+
+.pastorales{
+    background: $Color_Fondo_Secundario
+}
+
+.pastorales h2{
+    color: $Color3;
+    font-family: 'Courgette', bold;
+    padding-top: 2rem;
+}
+
+.pastorales p, ol{
+    color: $Color_Text_Principal;
+    font-family: 'Open Sans Condensed', light;
+    padding-top: 1rem;
+}
+
+.pastorales #Mensaje{
+    color: $Color_Text_Principal;
+    font-family: 'Courgette', bold;
+    padding-top: 2rem;
+}
+
+.pastorales span{
+    color: $Color10;
+    font-family: 'Courgette', bold;
+    padding-top: 2rem;
+}
+/*---------------------------------------*/
+/*----FIN DE LA SECCION #4 PASTORALES----*/
+
+
+/*--------------------------------*/
+/*CONFIGURANDO SECCION #5 GALERIA */
+
+.galeria{
+    background: $Color_Fondo_Secundario
+}
+
+.galeria h2{
+    color: $Color3;
+    font-family: 'Courgette', bold;
+    padding-top: 1rem;
+}
+
+.galeria p{
+    color: $Color_Text_Principal;
+    font-family: 'Open Sans Condensed', light;
+    padding-top: 1rem;
+}
+
+
+.galeria .container .carousel-fade .carousel-item {
+ opacity: 0;
+ transition-duration: .5s;
+ transition-property: opacity;
+ position: absolute;
+}
+
+.galeria .container .carousel slide  .carousel-item.active,
+.galeria .container .carousel slide  .carousel-item-next.carousel-item-left,
+.galeria .container .carousel slide  .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+.galeria .container .carousel slide .active.carousel-item-left,
+.galeria .container .carousel slide .active.carousel-item-right {
+ opacity: 0;
+}
+
+.galeria .container .carousel slide .carousel-item-next,
+.galeria .container .carousel slide .carousel-item-prev,
+.galeria .container .carousel slide .carousel-item.active,
+.galeria .container .carousel slide .active.carousel-item-left,
+.galeria .container .carousel slide .active.carousel-item-prev {
+ transform: translateX(0);
+ transform: translate3d(0, 0, 0);
+}
+/*------------------------------------*/
+/*----FIN DE LA SECCION #5 GALERIA----*/
+
+
+/*--------------------------------------*/
+/*CONFIGURANDO SECCION #6 FIN DEL SITIO */
+
+.piedepagina{
+    background: $Color_Text_Secundario;
+    color: $Color_Text_Principal;
+    text-align: center;
+    font-size: .9rem;
+    padding-top: .5rem;
+}
+
+.piedepagina .redes-sociales{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+}
+
+.piedepagina .redes-sociales a{
+    color: $Color_Text_Principal;
+    font-size: 2rem;
+    margin: 0 .8rem;
+}
+
+.piedepagina .redes-sociales a:hover{
+    color: $Color10;
+    opacity: 20;
+    transition: all .5s ease;
+}
+/*------------------------------------*/
+/*-FIN DE LA SECCION #6 FIN DE SITIO-*/
+
+
+/*--------------------------------------*/
+/*CONFIGURANDO BOTON DE DESPLAZAMIENTO */
+.ir-arriba{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    color: $Color10;;
+    text-decoration: none;
+    z-index: 99999;
+    line-height: 0;
+    transition: all .5s ease;
+}
+
+.ir-arriba:hover,
+.ir-arriba:focus{
+    outline: 0;
+    text-decoration: none;
+    color: $Color_Text_Principal;
+}
+
+
+/*------------------------------------*/
+/*-FIN DE LA CONFIGURACION DEL BOTON-*/
+
+
+/*---------------------*/
+/*CONFIGURANDO JQUERY */
+@media (min-width:768px){
+    #menu-principal {
+        height: auto !important;
+        display: block;
+    }
+    
+     #menu-principal ul{
+        display: flex;
+        margin: 0 0 0 0;
+    }
+    
+      #menu-principal ul li a{
+        padding: .8rem;
+        text-transform: capitalize;
+        margin: .3rem;
+        border-top: 0px;
+    }
+    
+}
+
+
+
+
+/*---------------------*/
+
+
+

@@ -1,5 +1,6 @@
+/*Color letras seccion Devocion */
 html {
-  font-size: 17px; }
+  font-size: 18px; }
 
 .encabezado {
   background: #CF2033;
@@ -67,8 +68,11 @@ html {
 /*CONFIGURANDO LOS INPUT DE TIPO TEXTO */
 .contenedor-bloque-buscar input[type="text"] {
   border: 0;
-  border-radius: 10px 0 0 10px;
-  padding: 1rem; }
+  border-radius: 5px 0 0 5px;
+  padding: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto; }
 
 .contenedor-bloque-buscar input[type="submit"] {
   -webkit-box-flex: 1;
@@ -77,7 +81,11 @@ html {
   border: 0;
   border-radius: 0 5px 5px 0;
   background: #FFCD00;
-  Color: #FFFFFF; }
+  Color: #FFFFFF;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  padding: 0 1rem; }
 
 /*------------------------------------------------*/
 /*------------------------------------------------*/
@@ -125,10 +133,11 @@ html {
 /*------------------------------------------------*/
 /*CONFIGURANDO EL ENCABEZADO PRINCIPAL */
 .texto-encabezado .display-4 {
-  margin-top: 4rem;
+  margin-top: 1rem;
   font-family: 'Courgette', bold;
   color: #CF1F2E;
-  text-align: center; }
+  text-align: center;
+  font-size: 50px; }
 
 /*------------------------------------------------*/
 /*------------------------------------------------*/
@@ -145,19 +154,20 @@ html {
 #Subtitulo1 {
   font-family: 'Oswald', bold;
   color: #B22222;
-  font-size: 20px; }
+  font-size: 26px; }
 
 #Contenido1 {
   font-family: 'Open Sans Condensed', light;
   color: #000000;
   text-align: justify;
-  font-size: 19px; }
+  font-size: 20px; }
 
 #Aviso1 {
   font-family: 'Source Serif Pro', bold;
   color: #B22222;
   text-align: center;
-  font-size: 19px; }
+  font-size: 18px;
+  font-weight: bolder; }
 
 .Boton_Contacto {
   float: none;
@@ -165,7 +175,7 @@ html {
 
 .flecha-bajar a {
   display: inline-block;
-  color: #CF0A2C;
+  color: #CF1F2E;
   font-size: 4rem;
   text-align: center;
   -webkit-animation: flecha-animada 2s ease-in-out infinite;
@@ -192,5 +202,240 @@ html {
   to {
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
+/*---------------------------------*/
+/*CONFIGURANDO SECCION #2 DEVOCION */
+.devocion {
+  background: #CF2033; }
+
+.devocion h2 {
+  color: #F9EC64;
+  font-family: 'Courgette', bold;
+  padding-top: 2rem; }
+
+.devocion img {
+  width: 120%;
+  margin: 0 auto;
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.devocion #Items {
+  font-family: 'Open Sans Condensed', light;
+  color: #F9EC64;
+  font-size: 22px; }
+
+.devocion p {
+  color: #FFFFFF;
+  text-align: justify;
+  font-size: 15px; }
+
+.devocion h4,
+.devocion a:hover {
+  color: #FFCD00;
+  font-family: 'Oswald', light;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  margin: 1rem 0; }
+
+/*------------------------------*/
+/*-----------------------------------------*/
+/*CONFIGURANDO SECCION GALERIA DE IMAGENES */
+.devocion .contanier {
+  padding-left: 0;
+  padding-right: 0; }
+
+.devocion .owl-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: .3rem 0;
+  font-size: 3rem;
+  color: #FFFFFF;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+.devocion .owl-nav .owl-prev,
+.devocion .owl-nav .owl-next,
+.devocion .owl-nav .owl-prev:hover,
+.devocion .owl-nav .owl-next:hover {
+  margin: 0 .7rem;
+  color: yellow; }
+
+/*-----------------------------------------*/
+/*------FIN DE LA SECCION #2 DEVOCION------*/
+/*---------------------------------------*/
+/*CONFIGURANDO SECCION #3 SOBRE NOSOTROS */
+.nosotros {
+  background: #028F6D; }
+
+.nosotros h2 {
+  color: #F9EC64;
+  font-family: 'Courgette', bold;
+  padding-top: 2rem; }
+
+.nosotros p {
+  color: #FFFFFF;
+  font-family: 'Open Sans Condensed', light;
+  padding-top: 1rem; }
+
+.nosotros .container img:hover {
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+  border-bottom-style: solid; }
+
+/*---------------------------------------*/
+/*-----FIN DE LA SECCION #3 NOSOTROS-----*/
+/*---------------------------------------*/
+/*CONFIGURANDO SECCION #4 EQUIPO PASTORAL */
+.pastorales {
+  background: #028F6D; }
+
+.pastorales h2 {
+  color: #F9EC64;
+  font-family: 'Courgette', bold;
+  padding-top: 2rem; }
+
+.pastorales p, ol {
+  color: #FFFFFF;
+  font-family: 'Open Sans Condensed', light;
+  padding-top: 1rem; }
+
+.pastorales #Mensaje {
+  color: #FFFFFF;
+  font-family: 'Courgette', bold;
+  padding-top: 2rem; }
+
+.pastorales span {
+  color: #FFCD00;
+  font-family: 'Courgette', bold;
+  padding-top: 2rem; }
+
+/*---------------------------------------*/
+/*----FIN DE LA SECCION #4 PASTORALES----*/
+/*--------------------------------*/
+/*CONFIGURANDO SECCION #5 GALERIA */
+.galeria {
+  background: #028F6D; }
+
+.galeria h2 {
+  color: #F9EC64;
+  font-family: 'Courgette', bold;
+  padding-top: 1rem; }
+
+.galeria p {
+  color: #FFFFFF;
+  font-family: 'Open Sans Condensed', light;
+  padding-top: 1rem; }
+
+.galeria .container .carousel-fade .carousel-item {
+  opacity: 0;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  position: absolute; }
+
+.galeria .container .carousel slide .carousel-item.active,
+.galeria .container .carousel slide .carousel-item-next.carousel-item-left,
+.galeria .container .carousel slide .carousel-item-prev.carousel-item-right {
+  opacity: 1; }
+
+.galeria .container .carousel slide .active.carousel-item-left,
+.galeria .container .carousel slide .active.carousel-item-right {
+  opacity: 0; }
+
+.galeria .container .carousel slide .carousel-item-next,
+.galeria .container .carousel slide .carousel-item-prev,
+.galeria .container .carousel slide .carousel-item.active,
+.galeria .container .carousel slide .active.carousel-item-left,
+.galeria .container .carousel slide .active.carousel-item-prev {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0); }
+
+/*------------------------------------*/
+/*----FIN DE LA SECCION #5 GALERIA----*/
+/*--------------------------------------*/
+/*CONFIGURANDO SECCION #6 FIN DEL SITIO */
+.piedepagina {
+  background: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: .9rem;
+  padding-top: .5rem; }
+
+.piedepagina .redes-sociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.piedepagina .redes-sociales a {
+  color: #FFFFFF;
+  font-size: 2rem;
+  margin: 0 .8rem; }
+
+.piedepagina .redes-sociales a:hover {
+  color: #FFCD00;
+  opacity: 20;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+/*------------------------------------*/
+/*-FIN DE LA SECCION #6 FIN DE SITIO-*/
+/*--------------------------------------*/
+/*CONFIGURANDO BOTON DE DESPLAZAMIENTO */
+.ir-arriba {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  color: #FFCD00;
+  text-decoration: none;
+  z-index: 99999;
+  line-height: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+.ir-arriba:hover,
+.ir-arriba:focus {
+  outline: 0;
+  text-decoration: none;
+  color: #FFFFFF; }
+
+/*------------------------------------*/
+/*-FIN DE LA CONFIGURACION DEL BOTON-*/
+/*---------------------*/
+/*CONFIGURANDO JQUERY */
+@media (min-width: 768px) {
+  #menu-principal {
+    height: auto !important;
+    display: block; }
+
+  #menu-principal ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0 0 0; }
+
+  #menu-principal ul li a {
+    padding: .8rem;
+    text-transform: capitalize;
+    margin: .3rem;
+    border-top: 0px; } }
+/*---------------------*/
 
 /*# sourceMappingURL=styles.css.map */
