@@ -6,12 +6,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Carga archivos JS -->
+    <script src="js/jquery-slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/funcion.js"></script>
+    
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
-        
-    <!-- Carga archivos CSS -->
-    <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
     
     <!--Carga de control CSS de Imagenes -->
     <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
@@ -24,70 +35,72 @@
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet"> <!-- Fuente especial -->
     
     <!-- Carga de Iconos -->
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">   
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"> 
     
+    <!-- Carga archivos CSS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+      
   </head>
   <body>
     <section class="bienvenida">
-       <!-- navbar fixed-top permite bloquear la barra del menu inicial para que permanezca siempre arriba -->
-            <header class="encabezado navbar" role="banner">
-                 <!-- Para disenar la barra de menu creamos un contenedor donde estaran los controles -->
-                 <div class="container">
-                    <a href="index.html" class="logo">
-                        <img src="images/Logo.svg" alt="Logo del sitio web">
-                    </a>
+        <header class="encabezado navbar" role="banner" id="encabezado">
+        <!-- Para disenar la barra de menu creamos un contenedor donde estaran los controles -->
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="images/Logo.svg" alt="Logo del sitio web">
+                </a>
                 
-                 <!--Barra menu principal-->                 
-                    <button class="boton-buscar" type="button" data-toggle="collapse" data-target="#bloque-buscar" aria-expanded="false" aria-controls="collapseExample">
-                          <i class="fa fa-search" aria-hidden="true"></i>
-                    </button>
+                <!--Barra menu principal-->                 
+                <button class="boton-buscar" type="button" data-toggle="collapse" data-target="#bloque-buscar" aria-expanded="false">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
                       
-                    <button class="boton-buscar" type="button" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false" aria-controls="collapseExample">
-                          <i class="fa fa-bars" aria-hidden="true"></i>
-                    </button>
+                <button class="boton-buscar" type="button" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
             
-                    <div class="collapse" id="bloque-buscar">
-                          <div class="contenedor-bloque-buscar">
-                                <input type="text" placeholder="Buscar...">
-                                <input type="submit" value="Buscar">
-                          </div>
-                     </div>
-            
-                    <div class="collapse" id="menu-principal">
-                        <ul>
-                            <li class="active"> <a href="index.html">Inicio</a></li>
-                            <li> <a href="devocion.html">Devocion</a></li>
-                            <li> <a href="nosotros.html">Nosotros</a></li>
-                            <li> <a href="pastorales.html">Pastorales</a></li>
-                            <li> <a href="servicios.html">Servicios</a></li>
-                            <li> <a href="galeria.html">Galeria</a></li>
-                            <li> <a href="contacto.html">Contacto</a></li>
-                        </ul>
+                <form action="#" class="collapse" id="bloque-buscar">
+                    <div class="contenedor-bloque-buscar">
+                        <input type="text" placeholder="Buscar...">
+                        <input type="submit" value="Buscar">
                     </div>
-                </div>             
-            </header>
+                </form>
+            
+                <nav class="collapse" id="menu-principal">
+                    <ul>
+                        <li class="active"> <a href="index.html">Inicio</a></li>
+                        <li> <a href="devocion.html">Devoción</a></li>
+                        <li> <a href="nosotros.html">Nosotros</a></li>
+                        <li> <a href="pastorales.html">Pastorales</a></li>
+                        <li> <a href="servicios.html">Servicios</a></li>
+                        <li> <a href="galeria.html">Galería</a></li>
+                        <li> <a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>             
+        </header>
         
         <div class="texto-encabezado">
-           <div class="container">
-                <h1 class="display-4">"Con Maria de la Merced, <br> crezcamos en comunion."</h1>
-                    <p id="Subtitulo1">Oracion inicial para todos los dias.</p>
-                    <p id="Contenido1"> Oh! Virgen Santísima de la Merced, Redentora de los cautivos y Reina de los cielos y la tierra: Ante tu altar postrados, aquí estamos para solicitar tus auxilios y pedir tu bendición de Madre. No nos abandones. Ruega al Señor por nosotros y sigue ejercitando tu oficio de Patrona y abogada nuestra. Todo lo esperamos de Jesucristo en quien confiamos y de tu benigna y amorosa protección, que en tantas ocasiones nos ha librado del mal. Atiende a nuestra súplica y remedia la necesidad que te presentamos. Amén.</p>
-                    <p id="Aviso1"> Sitio Web oficial de nuestra Comunidad Parroquial, bajo la dirección del Pbro. Antonio Castro Granados.</p>
+            <div class="container">
+                <h1 class="display-4 wow bounceIn">"Con María de la Merced, <br>crezcamos en comunión."</h1>
+                    <p id="Subtitulo1">Oración inicial para todos los días.</p>
+                    <p id="Contenido1"> Oh! Virgen Santísima de la Merced, redentora de los cautivos y Reina de los cielos y la tierra: Ante tu altar postrados, aquí estamos para solicitar tus auxilios y pedir tu bendición de Madre. No nos abandones. Ruega al Señor por nosotros y sigue ejercitando tu oficio de Patrona y abogada nuestra. Todo lo esperamos de Jesucristo en quien confiamos y de tu benigna y amorosa protección, que en tantas ocasiones nos ha librado del mal. Atiende a nuestra súplica y remedia la necesidad que te presentamos. Amén.</p>
+                    <p id="Aviso1"> Sitio Web Oficial de nuestra Comunidad Parroquial, bajo la dirección del Pbro. Antonio Castro Granados.</p>
                     
                     <div class="Boton_Contacto">
-                        <a href="contacto.html" class="btn btn-primary btn-lg text-center">Contactanos</a>
+                        <a href="contacto.html" class="btn btn-primary btn-lg text-center">Contáctanos</a>
                     </div>
                     <br>
-           </div>
+            </div>
         </div>
         
         <div class="flecha-bajar text-center">
-            <a href="#">
+            <a data-scroll href="#devocion">
                <i class="fa fa-angle-down" aria-hidden="true"></i>
             </a>
-        </div>
-        
-        
+        </div>              
     </section>
     
     <!-- CONFIGURANDO SECCION #2 - DEVOCION. -->
@@ -96,20 +109,20 @@
         <div class="container">
               <div class="row">
                   <!--CONFIGURANDO TAMANO PARA PANTALLAS PEQUENAS Y DESKTOP -->
-                  <div class="col-xs-12 col-md-8 col-xl-9">
+                  <div class="col-xs-12 col-md-8 col-xl-9 wow fadeInLeft" data-wow-duration="2s">
                        <h2 class="h3 text-center text-md-left font-weight-bold">Origen de la Devoción a Nuestra Señora de La Merced.</h2>
-                       <p class="font-weight-bold" id="Items">1. Etimologia.</p>
-                       <p>La Virgen de La Merced o Nuestra Señora de Las Mercedes, es una Advocación Mariana venerada por los católicos de la     Bienaventurada Virgen María. Es equivalente también a utilizar el nombre de: Virgen de la Misericordia. Su fiesta se celebra el día 24 de Septiembre.</p>
-                       <p class="font-weight-bold" id="Items">2. Devocion.</p>
-                       <p>La devoción a la Virgen de La Merced se difundió desde Cataluña y de ahí pasó al resto de España, luego 	a Francia e Italia, a partir del siglo XIII con la labor de redención de religiosos y cofrades. Posteriormente la Orden de La Merced participó en la evangelización americana lográndose la extensión y arraigue devocional a todo el territorio.</p>
-                       <p>La historia nos indica que frailes Mercedarios participaron de la conquista de América. Fray Francisco de Bobadilla, militar de la orden de Santa María de la Merced, pasó a tierra firme en compañía de Pedro Arias de Ávila a la ciudad de León, en la que fundó el convento de la Merced en compañía de otros religiosos en el año 1528, siendo el primero que hubo en la provincia de Nicaragua.</p>
-                       <p>Años más tarde fundó Pedrarias Dávila la ciudad de Nueva Segovia, en la que se organizaron los conventos de la Merced y San Francisco. Finalmente, en 1762 Fray Diego de Alcaraz ayudado de vecinos de la ciudad de León construyen el primer templo de la Merced, el cual fue destruido por la furia del volcán Momotombo.</p>
-                       <p class="font-weight-bold" id="Items">3. Advocacion.</p>
-                       <p>a Advocación de la Virgen de la Merced, proviene del tipo de los que tienen su origen en una determinada imagen de la Virgen a la que se le tiene especial devoción en una población, región o familia religiosa.</p>                  
+                       <p class="font-weight-bold" id="Items">1. Etimología.</p>
+                       <p>La Virgen de La Merced o Nuestra Señora de Las Mercedes, es una Advocación Mariana venerada por los católicos de la     Bienaventurada Virgen María. Es equivalente también a utilizar el nombre de: <strong>Virgen de la Misericordia.</strong> Su fiesta se celebra el día 24 de Septiembre.</p>
+                       <p class="font-weight-bold" id="Items">2. Devoción.</p>
+                       <p>La devoción a la Virgen de La Merced se difundió desde Cataluña y de ahí pasó al resto de España, luego a Francia e Italia, a partir del siglo XIII con la labor de redención de religiosos y cofrades. Posteriormente la <strong>Orden de La Merced</strong> participó en la evangelización americana lográndose la extensión y arraigue devocional a todo el territorio.</p>
+                       <p>La historia nos indica que frailes Mercedarios participaron de la conquista de América. <strong>Fray Francisco de Bobadilla</strong>, militar de la orden de Santa María de la Merced, pasó a tierra firme en compañía de <strong>Pedro Arias de Ávila</strong> a la ciudad de León, en la que fundó el convento de La Merced en compañía de otros religiosos en el año 1528, siendo el primero que hubo en la provincia de Nicaragua.</p>
+                       <p>Años más tarde fundó <strong>Pedrarias Dávila</strong> la ciudad de Nueva Segovia, en la que se organizaron los conventos de la Merced y San Francisco. Finalmente, en 1762 <strong>Fray Diego de Alcaraz</strong> ayudado de vecinos de la ciudad de León construyen el primer templo de la Merced, el cual fue destruido por la furia del volcán Momotombo.</p>
+                       <p class="font-weight-bold" id="Items">3. Advocación.</p>
+                       <p>a Advocación de la Virgen de La Merced, proviene del tipo de los que tienen su origen en una determinada imagen de la Virgen a la que se le tiene especial devoción en una población, región o familia religiosa.</p>                  
                    </div>
                    
                       <div class="align-self-center col-xs-12 col-md-4 col-xl-3">
-                          <img class="rounded-circle" src="images/Merced.svg" alt="Virgen de la Merced">
+                          <img class="rounded-circle img-fluid wow bounceIn" data-wow-duration="2s" data-wow-delay="1s" src="images/VirgenMerced.jpg" alt="Virgen de la Merced">
                       </div> 
                    
                    <!-- CONFIGURANDO LA GALERIA DE IMAGENES -->
@@ -147,9 +160,9 @@
                 <div class="col-xs-12 col-md-8 col-xl-9">
                     <h2 class="h3 text-center text-md-left font-weight-bold">Sobre nuestra Comunidad Parroquial.</h2>
                     <p>Sección dedicada a mostrar una reseña histórica sobre nuestra comunidad parroquial.</p>
-                    <div class="container-enlarge">
-                        <img class="card" src="images/Foto5.jpg" alt="Comunidad">
-                    </div> 
+                        <!-- La Clase img-fluid permite escalar la imagen al tamano del elemento Padre, 
+                        que en este caso es la clase container -->
+                        <img class="img-fluid" src="images/Foto5.jpg" alt="Comunidad">
                 </div>
             </div>
             <br>
@@ -163,7 +176,7 @@
            <div class="row">
                <div class="col-xs-12 col-md-8 col-xl-9">
                    <h2 class="h3 text-center text-md-left font-weight-bold">Equipo Pastoral Parroquial.</h2>
-                   <p>Nuestra comunidad Parroquial se encuentra compuesta por once (12) Pastorales, las cuales son:</p>
+                   <p>Nuestra comunidad Parroquial se encuentra compuesta por doce (12) Pastorales, las cuales son:</p>
                    <ol>
                        <li>Pastoral Familiar. - Coordina: Fatima Castro.</li>
                        <li>Pastoral Litúrgica. - Coordina: Clelia Canales.</li>
@@ -192,7 +205,7 @@
         <div class="container">
             <div class="row">
                <div class="col-xs-12 col-md-8 col-xl-9">
-                   <h2 class="h3 text-center text-md-left font-weight-bold">Galeria.</h2>
+                   <h2 class="h3 text-center text-md-left font-weight-bold">Galería.</h2>
                    <p>Imagenes de nuestro trabajo pastoral.</p>
                 
                    <!-- CONFIGURANDO LA GALERIA DE IMAGENES -->
@@ -237,51 +250,57 @@
     <!-- CONFIGURANDO SECCION #6 - FINAL DEL SITIO. -->
     <!-- SISTEMA DE COLUMNAS DE BOOSTRAP 4. -->  
     <footer class="piedepagina p-y-1" role="contentinfo">
-        <div class="container">
-            <p>2018 © NETWORK Todos los derechos reservados.</p>
-                <ul class="redes-sociales">
-                    <li>
-                        <a href="https://www.facebook.com/Parroquia-La-Merced-Oficial-1609773545711158/">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                        </a>
-                    </li>
+       <div class="footer-top">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-3 col-md-6 footer-info">
+                      <h2 class="h5 font-weight-bold text-center">Iglesia Católica.</h2>
+                      <p>Parroquia Ntra. Sñra. de La Merced.</p>
+                      <p>Dir. Bo. Larreynaga del puente Larreynaga 4c. al Oeste 1c. al Sur. (Managua,Nic.)</p>
+                   </div>
+                   
+                   <div class="col-md-3 mx-auto footer-links">
+                       <ul class="redes-sociales">
+                           <h2 class="h5 font-weight-bold text-center">Redes Sociales.</h2>
+                           <li>
+                               <a href="https://www.facebook.com/Parroquia-La-Merced-Oficial-1609773545711158/">
+                                   <i class="fa fa-facebook" aria-hidden="true"></i>
+                               </a>
+                           </li>
                     
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                        </a>
-                    </li>
+                           <li>
+                               <a href="#">
+                                   <i class="fa fa-twitter" aria-hidden="true"></i>
+                               </a>
+                           </li>
                     
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-youtube" aria-hidden="true"></i>
-                        </a>
-                    </li>            
-                </ul>
-       </div>
+                           <li>
+                               <a href="#">
+                                   <i class="fa fa-youtube" aria-hidden="true"></i>
+                               </a>
+                           </li>            
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 footer-newsletter">
+                        <h2 class="h5 font-weight-bold text-center">Noticias.</h2>
+                        <p>Sitio Web en construcción, para mayor información puedes escribirnos a:</p>
+                        <p>Plamerced.mga@gmail.com</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"> <input type="submit" value="Enviar">
+                        </form>
+                   </div>           
+               </div>
+            </div>
+        </div>
+        <p class="footer-copyright text-center">2018 © NETWORK Todos los derechos reservados.</p>
     </footer>
     
     <!-- CONFIGURANDO EL BOTON DE DESPLAZAMIENTO. -->
     <!-- SISTEMA DE COLUMNAS DE BOOSTRAP 4. --> 
-    <a class="ir-arriba" href="#">
+    <a data-scroll class="ir-arriba" href="#encabezado">
         <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
     </a>
-    
-    
-    
-    
-    
-    
-
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-    
-    <!-- Carga archivos JS -->
-    <script src="js/jquery-slim.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
     
     <!--CONFIGURANDO SCRIPT PARA LA GALERIA DE IMAGENES -->
     <script type="text/javascript">

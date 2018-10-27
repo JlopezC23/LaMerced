@@ -13,7 +13,7 @@ $Color_Text_Menu:#F9F075;
 $Color2:#80141A;
 $Color3:#F9EC64;/*Color letras seccion Devocion */
 $Color4:#88C554;
-$Color5:#27773B;
+$Color5:#3F3075;
 $Color6:#CB85C2;
 $Color8:#DC5A26;
 $Color9:#B3AA33;
@@ -40,7 +40,7 @@ html{
 }
 
 .encabezado .logo img{
-    width: 200px;
+    width: 210px;
     height: auto;
 }
 
@@ -133,7 +133,7 @@ html{
     text-transform: capitalize;
     border-top: 1px solid $Color_Text_Principal;
     text-decoration: none;
-    font-family:  'Source Serif Pro', cursive;
+    font-family: 'Open Sans Condensed', light;
 }
 
 #menu-principal ul a:hover,
@@ -409,7 +409,7 @@ html{
     background: $Color_Text_Secundario;
     color: $Color_Text_Principal;
     text-align: center;
-    font-size: .9rem;
+    font-size: .7rem;
     padding-top: .5rem;
 }
 
@@ -418,7 +418,7 @@ html{
     justify-content: center;
     list-style: none;
     margin: 0;
-    padding: 0;    
+    padding: 0;
 }
 
 .piedepagina .redes-sociales a{
@@ -432,6 +432,18 @@ html{
     opacity: 20;
     transition: all .5s ease;
 }
+
+.piedepagina p{
+    color: $Color_Text_Principal;
+    font-family: 'Open Sans Condensed', light;
+    font-size: .7rem;
+}
+
+.piedepagina h2{
+    color: aqua;
+    font-family: 'Open Sans Condensed', light;
+}
+
 /*------------------------------------*/
 /*-FIN DE LA SECCION #6 FIN DE SITIO-*/
 
@@ -443,10 +455,11 @@ html{
     bottom: 1rem;
     right: 1rem;
     font-size: 3rem;
-    color: $Color10;;
+    color: $Color12;;
     text-decoration: none;
     z-index: 99999;
     line-height: 0;
+    
     transition: all .5s ease;
 }
 
@@ -454,7 +467,7 @@ html{
 .ir-arriba:focus{
     outline: 0;
     text-decoration: none;
-    color: $Color_Text_Principal;
+    color: $Color5;
 }
 
 
@@ -464,29 +477,68 @@ html{
 
 /*---------------------*/
 /*CONFIGURANDO JQUERY */
-@media (min-width:768px){
-    #menu-principal {
+/*DEFINICION SEGUN EL TAMANO DE LAS PANTALLAS */
+@media (min-width:768px)
+{
+    #menu-principal 
+    {            
         height: auto !important;
         display: block;
+        flex: 0 1 auto;
+        margin-left: auto;
+        order: 1;
     }
     
-     #menu-principal ul{
+    #menu-principal ul
+    {
         display: flex;
         margin: 0 0 0 0;
     }
     
-      #menu-principal ul li a{
+    #menu-principal ul li a
+    {
         padding: .8rem;
         text-transform: capitalize;
-        margin: .3rem;
+        margin: 0 .2rem;
         border-top: 0px;
+        border-bottom: 3px solid transparent;
+        transition: all .5s linear;
     }
     
+    #menu-principal ul li.active a,
+    #menu-principal ul li a:hover
+    {
+        color: $Color10;
+        border-bottom: 3px solid;
+    }
+    
+    .boton-buscar
+    {
+        margin-left: 1rem;
+        margin-right: 0;
+        order: 2;
+    }
+    
+    #bloque-buscar
+    {
+        order: 3;
+        position: absolute;
+        width: 20rem;
+        right: 6.5rem;
+        top: 4.5rem;
+        transition: all .5s ease;
+    }
+    
+    
+    .piedepagina .redes-sociales a
+    {
+        display: block;
+        width: 100%;
+    }
+    
+    
+    
 }
-
-
-
-
 /*---------------------*/
 
 
